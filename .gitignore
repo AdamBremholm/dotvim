@@ -1,0 +1,9 @@
+
+You can try the following:
+
+#ignore everything
+*
+#except .vimrc
+!.vimrc
+!.vimrc-mini
+!.gitignore
