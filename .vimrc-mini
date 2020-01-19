@@ -1,0 +1,12 @@
+call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }i
+Plug 'fatih/molokai'
+call plug#end()
+
+inoremap jk <ESC>
+let mapleader = " "
+filetype plugin indent on 
+syntax on 
+set encoding=utf-8
+set pastetoggle=<F2>
+
