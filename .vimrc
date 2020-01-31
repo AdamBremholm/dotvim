@@ -12,6 +12,9 @@ Plug 'fatih/molokai'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
@@ -74,7 +77,15 @@ colorscheme molokai
 """"""""""""""""""""""
 "      Mappings      "
 """"""""""""""""""""""
+" Your own mappings
 
+" For Fast action mode 
+inoremap jk <ESC>
+" For not opening new line with o O
+"nnoremap o o<Esc>
+"nnoremap O O<Esc>
+""""""""""""""""""""""
+" falith mappings
 " Set leader shortcut to a comma ','. By default it's the backslash
 let mapleader = ","
 
@@ -83,8 +94,6 @@ let mapleader = ","
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
-
-inoremap jk <ESC>
 
 " Visual linewise up and down by default (and use gj gk to go quicker)
 noremap <Up> gk
